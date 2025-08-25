@@ -27,7 +27,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="bg-[#F8F8F8]">
     <header class="shadow p-4 container mx-auto">
       <div class="flex justify-center items-center gap-2">
         <img src="./assets/logo.png" alt="" class="w-16" />
@@ -40,7 +40,8 @@
       </div>
     </header>
 
-    <main>
+    <main class="pb-36">
+      <!-- hero section -->
       <section
         id="hero"
         class="mt-1 pt-28 flex flex-col justify-center items-center container mx-auto bg-gradient-to-b from-[#FFF] to-[#F6DDEA]"
@@ -70,6 +71,91 @@
           </div>
           <img src="./assets/hero-bg.png" alt="" class="w-[1010px]" />
         </div>
+      </section>
+
+      <!-- main section -->
+      <section
+        class="mx-auto mt-28 w-10/12 grid grid-cols-12 gap-28 box-border items-start"
+      >
+        <!-- products section -->
+        <section id="products-container" class="col-span-9">
+          <h2 class="text-4xl font-bold">Kitchenware</h2>
+          <div id="kitchen-items">
+            <div class="grid grid-cols-3 gap-6 mt-8">
+              <!-- card-1 -->
+              <div class="card bg-base-100 w-full shadow-sm">
+                <figure class="py-8 px-24 bg-[#1111110d] rounded-lg m-5">
+                  <img src="./assets/kitchen-1.png" alt="Shoes" />
+                </figure>
+                <div class="card-body items-center text-center gap-2 p-0 pb-5">
+                  <h2 class="card-title">K. Accessories</h2>
+                  <p class="text-xl font-normal text-gray-500">39.00 TK</p>
+                  <div class="card-actions">
+                    <button
+                      class="btn bg-pink-500 text-xl font-semibold text-white px-4 py-3"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card-2 -->
+              <div class="card bg-base-100 w-full shadow-sm">
+                <figure class="py-8 px-24 bg-[#1111110d] rounded-lg m-5">
+                  <img src="./assets/kitchen-1.png" alt="Shoes" />
+                </figure>
+
+                <div class="card-body items-center text-center gap-2 p-0 pb-5">
+                  <h2 class="card-title">K. Accessories</h2>
+                  <p class="text-xl font-normal text-gray-500">39.00 TK</p>
+                  <div class="card-actions p-0 m-0">
+                    <button
+                      class="btn bg-pink-500 text-xl font-semibold text-white px-4 py-3"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card-3 -->
+              <div class="card bg-base-100 w-full shadow-sm">
+                <figure class="py-8 px-24 bg-[#1111110d] rounded-lg m-5">
+                  <img src="./assets/kitchen-1.png" alt="Shoes" />
+                </figure>
+                <div class="card-body items-center text-center gap-2 p-0 pb-5">
+                  <h2 class="card-title">K. Accessories</h2>
+                  <p class="text-xl font-normal text-gray-500">39.00 TK</p>
+                  <div class="card-actions">
+                    <button
+                      class="btn bg-pink-500 text-xl font-semibold text-white px-4 py-3"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- aside section -->
+        <aside id="aside" class="col-span-3">
+          <div class="mt-16 bg-white p-6">
+            <h2 class="text-2xl font-medium mb-4">Have coupon?</h2>
+            <div class="join">
+              <input
+                class="input join-item py-6 focus:border-none rounded-l-sm"
+                placeholder="Coupon code"
+              />
+              <button
+                class="btn join-item rounded-r-sm bg-pink-500 text-xl font-semibold text-white py-6 px-4"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+        </aside>
       </section>
     </main>
     <!-- script -->
