@@ -28,7 +28,7 @@
     </style>
   </head>
   <body>
-    <header class="shadow p-4">
+    <header class="shadow p-4 container mx-auto">
       <div class="flex justify-center items-center gap-2">
         <img src="./assets/logo.png" alt="" class="w-16" />
         <div>
@@ -39,6 +39,39 @@
         </div>
       </div>
     </header>
+
+    <main>
+      <section
+        id="hero"
+        class="mt-1 pt-28 flex flex-col justify-center items-center container mx-auto bg-gradient-to-b from-[#FFF] to-[#F6DDEA]"
+      >
+        <div class="flex flex-col justify-center items-center -mb-[100px]">
+          <div class="flex items-center flex-col">
+            <div class="text-center mb-10">
+              <h1 class="text-5xl font-bold">Purchase TK 200 or above & get</h1>
+              <h1 class="text-5xl font-bold text-[#E527B2]">20% off</h1>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <div>
+                <input
+                  type="text"
+                  class="px-11 py-4 rounded-lg border-gray-100"
+                  placeholder="Use Promo Code"
+                  required
+                />
+              </div>
+              <button
+                class="text-xl text-white font-semibold py-4 px-11 bg-[#E527B2] rounded-lg cursor-pointer"
+              >
+                SELL200
+              </button>
+            </div>
+          </div>
+          <img src="./assets/hero-bg.png" alt="" class="w-[1010px]" />
+        </div>
+      </section>
+    </main>
     <!-- script -->
     <script src="./script/script.js"></script>
   </body>
